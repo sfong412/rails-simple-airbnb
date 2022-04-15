@@ -1,0 +1,61 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import "font-awesome";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.row-flats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-flat {
+  justify-content: space-between;
+  margin: 6px;
+  width: 350px;
+  box-shadow: 0px 0px 2px #888888;
+}
+
+.box-img {
+  height: 160px;
+  background-image: url('https://source.unsplash.com/random/?indoors');
+  background-size: cover;
+}
+
+.box-header {
+  padding: 2px 12px;
+  height: 160px;
+  background-color: #fdfdfd;
+}
+
+.box-numbers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  bottom: 6px;
+  padding: 0 8px;
+}
+
+.box-numbers-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 12px;
+  i {
+    padding: 6px;
+  }
+}
+
+.box-link {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 8px;
+  a {
+    text-decoration: none;
+  }
+}

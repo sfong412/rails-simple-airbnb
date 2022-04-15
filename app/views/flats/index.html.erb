@@ -1,0 +1,35 @@
+<div class="navbar navbar-light bg-light">
+  <p>Simple AirBnb</p>
+  <%= link_to 'Add Flat', new_flat_path %>
+</div>
+<div>
+  <h1><%= "All out Flats (#{@flats.count})" %></h1>
+  <div class="row-flats">
+
+    <% @flats.each do |f| %>
+      <div class='box-flat'>
+        <div class='box-img'>
+        </div>
+        <div class='box-header'>
+          <h1><%= f.name %></h1>
+          <p><%= f.address %></p>
+        </div>
+        <div class='box-numbers'>
+          <div class='box-numbers-item'>
+            <i class="fas fa-user-friends"></i>
+            <p><%= f.number_of_guests %></p>
+          </div>
+          <div class='box-numbers-item'>
+            <i class="fas fa-dollar-sign"></i>
+            <p><%= f.price_per_night %></p>
+          </div>
+        </div>
+        <div class='box-link'>
+          <%= link_to 'More info', flats_path %>
+          <%= link_to 'Edit', flats_path %>
+          <%= link_to 'Remove', flats_path %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
